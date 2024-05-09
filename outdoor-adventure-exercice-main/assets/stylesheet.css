@@ -1,0 +1,210 @@
+body {
+   height: 100vh;
+   padding: 0;
+   margin: 0;
+   background-color: rgb(243, 246, 243);
+   font-family: 'Montserrat','Noto sans', sans-serif;
+   font-weight: 400;
+   font-size: 1rem;  
+}
+/* FIXED customizing button*/
+.customize-btn {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 5;
+   position: fixed;
+   top: 11rem;
+   right:0;
+   line-height: 1rem;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5%;
+   border: solid .1rem rgb(229, 231, 235) ;  
+   height: 3rem;
+   width: 8rem;
+}
+
+.customize-btn span {
+   box-sizing: border-box;
+   font-family: dm sans;
+}
+.customize-btn img {
+   height: 1rem;
+   color:blue
+}
+#hoverPalette {
+   visibility: hidden;
+}
+
+.customize-btn:hover {
+   background-color: blue;
+}
+
+#palette:hover {
+   visibility:visible;
+}
+
+
+.customize-btn span:hover {
+   color: white;
+}
+
+
+/* HEADER with background image */
+header {
+   width:100%;
+   height: 100%;
+   position: relative; 
+   background-image: url('../assets/images/hero-bg-1.jpg'); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-attachment: fixed;
+   color: white;
+   z-index: -2;
+  }
+
+.filter {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left:0;
+   background-color: black;
+   opacity: 0.5; 
+   z-index: -1;  
+}
+
+.header-container {
+   display: flex;
+   justify-content: center;
+}
+
+
+/* NAVBAR avec logo, menu et bouton "take action"*/
+nav { 
+   height: 35%;
+   width: 100%;
+   padding: 0 1rem 0 1rem; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header nav img {
+   width: 12.5%;
+}
+
+.right-block {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 1rem;
+
+}
+
+nav ul li {
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1rem;
+
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: white;
+}
+
+.red-btn {
+   text-transform: uppercase;
+   font-weight: bold;
+   height: 3rem;
+   width: 10rem;
+   background-color: rgb(238, 8, 84);
+   border: solid rgb(238, 8, 84);
+   border-radius: 30px;
+   color: white;
+}
+
+
+/* MAIN-SECTION du header avec H1 notamment */
+.main-section {
+   position:relative;
+   height:100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.suggestion {
+   font-size: 1.5rem;
+   font-weight: bold;
+   
+}
+
+h1 {
+   font-size: 4rem;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.separator {
+   width: 4rem;
+   border-bottom: solid 0.2rem;
+   color:rgb(238, 8, 84);
+   margin-bottom: 1rem;
+}
+
+
+
+/* MAIN */
+main {
+   width: 100%;
+   /* display: flex;
+   flex-direction: column; */
+   /* justify-content : center; */
+   /* align-items: center; */
+  }
+
+.banner {
+   width: 100%;   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   
+}
+
+.quote-img {
+   width: 6%;
+   opacity: 0.5;
+   position: absolute;
+   top: 5rem;
+   left: 5rem;
+}
+
+.evenement-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.double-container {
+   display: flex;
+   flex-direction: colum;
+   justify-content: space-between;
+}
+
+.double-container img {
+   width: 30rem;
+   filter: sepia(0.1);
+}
