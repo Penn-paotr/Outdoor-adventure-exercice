@@ -7,48 +7,31 @@ body {
    font-weight: 400;
    font-size: 1rem;  
 }
-/* FIXED customizing button*/
-.customize-btn {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   z-index: 5;
-   position: fixed;
-   top: 11rem;
-   right:0;
-   line-height: 1rem;
-   background-color: rgb(255, 255, 255);
-   border-radius: 5%;
-   border: solid .1rem rgb(229, 231, 235) ;  
-   height: 3rem;
-   width: 8rem;
+
+a {
+   color: #fff;
+   text-decoration: none;
 }
 
-.customize-btn span {
-   box-sizing: border-box;
-   font-family: dm sans;
-}
-.customize-btn img {
-   height: 1rem;
-   color:blue
-}
-#hoverPalette {
-   visibility: hidden;
+h1 {
+   font-size: 4rem;
+   font-family: 'Montserrat', sans-serif;
 }
 
-.customize-btn:hover {
-   background-color: blue;
+h2 {
+   font-size: 2rem;
+   font-family: 'Montserrat', sans-serif;
 }
 
-#palette:hover {
-   visibility:visible;
+p {
+   line-height: 1.5rem;
 }
-
-
-.customize-btn span:hover {
-   color: white;
+.separator {
+   width: 4rem;
+   border-bottom: solid 0.2rem;
+   color:rgb(238, 8, 84);
+   margin-bottom: 1rem;
 }
-
 
 /* HEADER with background image */
 header {
@@ -126,10 +109,10 @@ nav ul li a {
    text-transform: uppercase;
    font-weight: bold;
    height: 3rem;
-   width: 10rem;
+   width: 12rem;
    background-color: rgb(238, 8, 84);
    border: solid rgb(238, 8, 84);
-   border-radius: 30px;
+   border-radius: 3rem;
    color: white;
 }
 
@@ -150,45 +133,34 @@ nav ul li a {
    
 }
 
-h1 {
-   font-size: 4rem;
-   font-family: 'Montserrat', sans-serif;
-}
-
-.separator {
-   width: 4rem;
-   border-bottom: solid 0.2rem;
-   color:rgb(238, 8, 84);
-   margin-bottom: 1rem;
-}
-
-
-
-/* MAIN */
-main {
+/* eventsSection */
+#eventsSection {
    width: 100%;
-   /* display: flex;
-   flex-direction: column; */
-   /* justify-content : center; */
-   /* align-items: center; */
   }
 
 .banner {
    width: 100%;   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   display: flex;  
+   justify-content: space-around;
    align-items: center;
+   margin-top: 5rem;
    position: relative;
    
 }
 
 .quote-img {
-   width: 6%;
-   opacity: 0.5;
+   width: 7%;
+   opacity: 0.8;
    position: absolute;
-   top: 5rem;
-   left: 5rem;
+   top: 0;
+   left: 3rem;
+}
+
+.quote-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .evenement-section {
@@ -199,12 +171,231 @@ main {
 }
 
 .double-container {
+   max-width: 100%;
    display: flex;
-   flex-direction: colum;
-   justify-content: space-between;
+   flex-direction: colum;  
 }
 
 .double-container img {
-   width: 30rem;
+   max-width: 76%;
+   margin: 2rem auto 2rem auto;
+   border-radius: .3rem;
+   box-shadow:.9rem .9rem 0 .1rem rgb(224, 223, 223);
    filter: sepia(0.1);
+}
+
+.double-container div {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+
+.left-container {
+   position: relative;
+   right: -2%;
+}
+
+.right-container {
+   position: relative;
+   left: -2%;
+}
+
+.double-container div p {
+   height: 8rem;
+   margin-left: 3.5rem;
+   margin-right: 3.5rem;
+   text-align: center;
+}
+
+.double-container div .red-btn{
+   margin-bottom: 6rem;
+}
+
+/* explorationSection */
+
+#explorationSection {
+   width:100%;
+   height: 100%;
+   position: relative; 
+   background-image: url('../assets/images/section-bg-img.jpg'); 
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-attachment: fixed;
+   color: white;
+   z-index: -2;
+  }
+
+/*    .filter { voir HEADER }    */
+
+.section-bg-fix {
+   width: 50%;
+   position: absolute;
+   right: 0;
+
+}
+
+/* destinationSection */
+
+.triple-container {
+   margin: 7rem 2.5rem 7rem 2.5rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);   
+   grid-gap: 1rem;
+   text-align: justify;
+}
+
+.column img {
+   max-width: 100%;
+   border-radius:.3rem;
+}
+
+.column:last-child {
+   margin-top: .5rem;
+}
+
+/* FOOTER  */
+
+footer {
+   height: 30%;
+   width: 100%;
+   background-color: black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+footer p {
+   color: white;
+   font-family: "Noto Sans";
+}
+
+
+/* CUSTOMIZE : button and modal window (pop-up)
+/* FIXED customizing button*/
+.customize-btn {
+   position: relative;
+   display: flex;
+   /* justify-content: space-around; */
+   align-items: center;
+   z-index: 5;
+   position: fixed;
+   top: 11rem;
+   right:0;
+   line-height: 1rem;
+   background-color: rgb(255, 255, 255);
+   border-radius: 5%;
+   border: solid .1rem rgb(229, 231, 235) ;  
+   height: 3rem;
+   width: 8rem;
+   transition: .3s;
+}
+.customize-btn span {
+   box-sizing: border-box;
+   position: absolute;
+   right: 1.1rem;
+   font-family: dm sans;
+}
+.customize-btn img {
+   height: 1rem;
+   color:blue
+}
+.blue-palette {
+   position: absolute;
+   left:1.1rem;
+}
+.white-palette {
+   position: absolute;
+   left:1.1rem;
+   visibility: hidden;
+}
+
+.customize-btn:hover {
+   background-color: blue;
+   border-color: blue;
+}
+.customize-btn:hover .blue-palette {
+   visibility:hidden;
+}
+.customize-btn:hover .white-palette {
+   visibility:visible;
+}
+.customize-btn:hover span {
+   color: white;
+}
+
+/* custommizing POPUP */
+.customize-popup {
+   position: fixed;
+   right: 0;
+   width: 30%;
+   max-width: 50rem;
+   background-color: rgb(255, 255, 255);
+   border: solid .1rem rgb(224, 223, 223);
+   border-radius: 0.1rem;
+   visibility: hidden;
+   transition: .3s;
+   z-index: 1;
+}
+
+.customize-popup:target {
+   visibility: visible;
+}
+
+.popup-header {
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+   box-shadow:0 .1rem 0 .1rem rgb(224, 223, 223);
+   border-top: solid 0.1rem rgb(229, 231, 235);
+   
+}
+
+.customize-popup h3 {
+   font-size: 2rem;
+   font-weight: 600;
+   line-height: 2rem;
+   color: rgb(64, 64, 64);
+}
+
+.close {
+   width: 1rem;
+   height: 1rem;
+   border: solid 0.05 rem;
+   border-radius: 0.05rem;
+   opacity: .4;
+}
+
+.close:hover {
+   opacity: 0;
+}
+
+.popup-header p {
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 3rem;
+}
+
+.other-colors {
+   display: flex;
+   flex-direction: column;
+}
+
+.colors-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 500;
+}
+
+#customizePopup h4 {
+   font-family: "dm sans";
+   font-size: 1.8rem;
+}
+
+#customizePopup span {
+   opacity: 40%;
 }
