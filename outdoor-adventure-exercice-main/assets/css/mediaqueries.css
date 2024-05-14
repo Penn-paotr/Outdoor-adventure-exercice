@@ -1,0 +1,34 @@
+@media (max-width:768px) {
+    .header-container {
+        background-color: white;
+    }
+    .black-logo {
+        display: block;
+    }
+    .white-logo {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    header nav img {
+        width: 100px;
+    }
+    .black-logo {
+        display: block;
+    }
+    .white-logo {
+        display: none;
+    }
+    nav ul {
+       display: none;
+    }
+    nav .red-btn {
+        display: none;
+    }
+    nav .burger-btn {
+        display: block;
+    }
+    
+}
+

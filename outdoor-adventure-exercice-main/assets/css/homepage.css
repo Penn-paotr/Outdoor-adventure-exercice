@@ -23,6 +23,7 @@ h2 {
    font-family: 'Montserrat', sans-serif;
 }
 
+
 p {
    line-height: 1.5rem;
 }
@@ -38,8 +39,8 @@ header {
    width:100%;
    height: 100%;
    position: relative; 
-   background-image: url('../assets/images/hero-bg-1.jpg'); 
-   background-repeat: no-repeat; 
+   background-image: url('../images/homepage/hero-bg-1.jpg');
+   background-position:center; 
    background-size: cover;
    background-attachment: fixed;
    color: white;
@@ -56,6 +57,12 @@ header {
    opacity: 0.5; 
    z-index: -1;  
 }
+
+/* sinon possibilité dans header :*/
+/* header {
+   background-blend-mode: color;
+   background-color: rgb(181, 173, 173);
+} */
 
 .header-container {
    display: flex;
@@ -76,7 +83,9 @@ nav {
 header nav img {
    width: 12.5%;
 }
-
+.black-logo {
+   display: none;
+}
 .right-block {
    display: flex;
    justify-content: space-around;
@@ -105,6 +114,12 @@ nav ul li a {
    color: white;
 }
 
+.both-btns {
+   height: 3.2rem;
+   width: 12.2rem;
+   /* position: relative; */
+}
+
 .red-btn {
    text-transform: uppercase;
    font-weight: bold;
@@ -116,6 +131,27 @@ nav ul li a {
    color: white;
 }
 
+.both-btns .burger-btn {
+   height: 2.8rem;
+   width: 2.8rem;
+   /* position: absolute;
+   right: 0.2rem; */
+   background-color: rgb(238, 8, 84);
+   border-radius: .2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;    
+   display:none;
+}
+
+.burger-btn div {
+   height: 0.2rem;
+   width: 2.4rem;
+   border-top: solid 0.1rem white;
+   border-bottom: solid 0.1rem white;
+   /* background-color: rgb(238, 8, 84); */
+}
 
 /* MAIN-SECTION du header avec H1 notamment */
 .main-section {
@@ -219,7 +255,8 @@ nav ul li a {
    width:100%;
    height: 100%;
    position: relative; 
-   background-image: url('../assets/images/section-bg-img.jpg'); 
+   background-image: url('../images/homepage/section-bg-img.jpg'); 
+   
    background-repeat: no-repeat; 
    background-size: cover;
    background-attachment: fixed;
@@ -242,7 +279,7 @@ nav ul li a {
    margin: 7rem 2.5rem 7rem 2.5rem;
    display: grid;
    grid-template-columns: repeat(3, 1fr);   
-   grid-gap: 1rem;
+   gap: 1rem;
    text-align: justify;
 }
 
@@ -301,7 +338,7 @@ footer p {
 }
 .customize-btn img {
    height: 1rem;
-   color:blue
+   color:blue;
 }
 .blue-palette {
    position: absolute;
@@ -335,6 +372,8 @@ footer p {
    background-color: rgb(255, 255, 255);
    border: solid .1rem rgb(224, 223, 223);
    border-radius: 0.1rem;
+   font-family: "DM Sans", sans-serif;
+   line-height: 1.7rem;   
    visibility: hidden;
    transition: 2s;
    z-index: 3;
@@ -351,61 +390,149 @@ footer p {
    justify-content: space-between;
    align-items: center;
    box-shadow:0 .1rem .3rem 0rem rgb(224, 223, 223);
-   border-top: solid 0.1rem rgb(229, 231, 235);
+   border-top: solid 0.1rem rgb(229, 231, 235);   
    padding-left: 2rem;
    padding-right: 2rem;
 }
 
 .customize-popup h3 {
-   font-size: 1rem;
+   font-size: 1.2rem;
    font-weight: 600;
-   line-height: 2rem;
-   color: rgb(64, 64, 64);
+   line-height: 1.2rem;
+   
 }
 
 .close {
-   width: 1.3rem;
-   height: 1.3rem;
+   font-size: 1.5rem;
+   width: 1.6rem;
+   height: 1.6rem;
    display: flex;
    align-items: center;
    justify-content: center;
    border: solid 0.05 rem;
    border-radius: 0.05rem;
-   opacity:.7;
+   opacity:.5;
 }
 
 .close:hover {
    opacity: 1;
 }
 
-.popup-header p {
-   font-size: 1.6rem;
-   font-weight: 400;
-   line-height: 3rem;
+.popup-container {
+   box-sizing: border-box;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+.popup-container p {
+   font-size: .9rem;
+   font-weight: 300;
+   border-bottom: solid 0.1rem rgb(229, 231, 235);
 }
 
-.other-colors {
+.other-colors, .other-fonts {
    display: flex;
    flex-direction: column;
+   padding-top: 0rem;
+   padding-bottom: 0rem;
 }
 
-.colors-title {
+.colors-title, .fonts-title {
    display: flex;
    justify-content: space-between;
    align-items: center;
    font-weight: 500;
 }
 
-#customizePopup h4 {
-   font-family: "dm sans";
-   font-size: 1.8rem;
+
+.popup-container  h4 {   
+   font-size: 1rem;
+   font-weight: 500;
 }
 
-
-#customizePopup span {
-   opacity: 40%;
+.default {
+   font-size: .75rem;
+   font-weight: 400;
+   opacity: .4;
 }
 
 .default:hover {
    cursor: not-allowed;
 }
+/* 
+.other-colors {
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.other-fonts {
+   padding-left: 2rem;
+   padding-right: 2rem;
+} */
+
+.colors-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 6fr);   
+   grid-auto-rows: 2rem;
+   gap: 1rem;
+}
+
+.color-item {
+   border: solid 0.5rem rgb(229, 231, 235) ; 
+   border-radius: 5%;
+}
+
+.c1 {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 2;
+   display: flex;
+   justify-content: space between;
+   align-items: center;
+} 
+.c1 span {
+   text-transform: uppercase;
+   font-size: .8rem;
+}
+
+.default-set {
+   display: flex;
+   align-items: center;
+}
+
+.ball {
+   width: 1rem;
+   height: 1rem;
+   border-radius: 50%;
+}
+
+.default-colors-set:nth-child(1) {
+   background-color: rgb(251, 32, 86);
+}
+.default-colors-set:nth-child(2) {
+   background-color: rgb(218, 28, 75);
+}
+.default-colors-set:nth-child(3) {
+   background-color: rgb(25, 25, 25);
+}
+.default-colors-set:nth-child(4) {
+   background-color: rgb(64, 64, 64);
+}
+.default-colors-set:nth-child(5) {
+   background-color: rgb(245, 245, 245);
+}
+
+
+
+
+
+
+
+
+
+.fonts-grid {
+   display: grid;
+   grid-template-columns: repeat(4, 3fr);   
+   gap: 1rem;
+}
+
