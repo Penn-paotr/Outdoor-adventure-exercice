@@ -1,4 +1,23 @@
-@media (max-width:768px) {
+
+/* @media (max-width:1199px) {
+
+} */
+
+
+@media (max-width:991px) {
+    header {
+        height: 85vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    header {
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     .header-container {
         background-color: white;
     }
@@ -8,9 +27,6 @@
     .white-logo {
         display: none;
     }
-}
-
-@media (max-width:480px) {
     header nav img {
         width: 100px;
     }
@@ -23,12 +39,24 @@
     nav ul {
        display: none;
     }
-    nav .red-btn {
+    .both-btns .red-btn {
         display: none;
     }
-    nav .burger-btn {
+
+    .both-btns .burger-btn {
         display: block;
     }
     
+
 }
+
+/* @media (max-width:575px) {
+    
+    
+}
+
+@media (max-width:480px) {
+    
+    
+} */
 

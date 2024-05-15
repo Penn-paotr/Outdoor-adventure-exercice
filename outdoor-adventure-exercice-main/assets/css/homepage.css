@@ -117,7 +117,7 @@ nav ul li a {
 .both-btns {
    height: 3.2rem;
    width: 12.2rem;
-   /* position: relative; */
+   position: relative;
 }
 
 .red-btn {
@@ -134,8 +134,8 @@ nav ul li a {
 .both-btns .burger-btn {
    height: 2.8rem;
    width: 2.8rem;
-   /* position: absolute;
-   right: 0.2rem; */
+   position: absolute;
+   right: 0;
    background-color: rgb(238, 8, 84);
    border-radius: .2rem;
    display: flex;
@@ -150,7 +150,7 @@ nav ul li a {
    width: 2.4rem;
    border-top: solid 0.1rem white;
    border-bottom: solid 0.1rem white;
-   /* background-color: rgb(238, 8, 84); */
+   background-color: rgb(238, 8, 84);
 }
 
 /* MAIN-SECTION du header avec H1 notamment */
@@ -165,8 +165,12 @@ nav ul li a {
 
 .suggestion {
    font-size: 1.5rem;
-   font-weight: bold;
-   
+   font-weight: bold;   
+}
+
+h1 {
+   font-family: "Roboto", sans-serif;
+   font-weight: 600;  
 }
 
 /* eventsSection */
