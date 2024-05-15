@@ -5,19 +5,7 @@
 
 
 @media (max-width:991px) {
-    header {
-        height: 85vh;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-}
-
-@media (max-width:767px) {
-    header {
-        height: 70vh;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    
     .header-container {
         background-color: white;
     }
@@ -46,8 +34,22 @@
     .both-btns .burger-btn {
         display: block;
     }
-    
 
+    h1 {
+        font-size: 3rem;
+    }   
+
+}
+
+@media (max-width:767px) {
+    header {
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .filter {
+        height: 80vh;
+    }
 }
 
 /* @media (max-width:575px) {

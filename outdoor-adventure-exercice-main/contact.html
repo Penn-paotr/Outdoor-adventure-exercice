@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
@@ -28,32 +29,47 @@
             </ul>
             
         </nav>
-        <h1 class="my-40 font-bold text-center text-6xl text-white font-[Roboto]">Contact Us</h1>
+        <h1 class="my-60 font-bold text-center text-6xl text-white font-[Roboto]">Contact Us</h1>
     </header>
-    <main class="bg-white h-screen flex ">
-        <div class="flex-column">
-            <h2>We're Ready, Let's Talk.</h2>
-        <form action="" method="post">            
-            <input type="text" name="name" id="name" placeholder="Your Name" required />
-            <input type="text" name="email" id="email" placeholder="Email Address" required />
-            <textarea name="message" id="message" placeholder="Message"></textarea>
-        </form>
+    <main class="h-screen flex bg-[#f4efef] text-black p-32 gap-10">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0"> 
+            <h2 class="text-4xl font-[Montserrat] font-[700] mb-8">We're Ready, Let's Talk.</h2>
+            <form class="flex flex-col pt-6 pb-8 mb-4" action="" method="">            
+                <input type="text" name="name" id="name" placeholder="Your Name" required class="appearance-none bg-white mb-6  border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                <input type="text" name="email" id="email" placeholder="Email Address" required class="appearance-none  bg-white mb-6 border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
+                <textarea name="message" id="message" placeholder="Message" class="appearance-none bg-white mb-6 border rounded h-36 w-full py-2 px-3 text-gray-700 leading-tight"></textarea>
+                <input type="submit" value="SEND MESSAGE" class="appearance-none w-1/3 py-3 px-7 rounded-full font-semibold text-center text-white bg-[#fb2056] hover:bg-[#9e3939]">
+            </form>
         </div>
-        <div class="flex-column">
-            <h2>Contact Info</h2>
-            <article>
-                <span>Address</span>
-                <span>123 Fifth Avenue, NY 10160, New York, USA</span>
-                <span>contact@example.com​</span>
-                <span>Call Us </span>
-                <span>800-123-456</span>
-                <span>Follow Us</span>
-                <span></span><span></span>              
-    
+        <div class="w-full md:w-1/2 px-3">
+            <h2 class="text-4xl font-[Montserrat] font-[700] mb-8">Contact Info</h2>
+            <article class="flex flex-col gap-5">
+                <div class="flex flex-col gap-1">
+                    <h3 class="text-xl font-[Montserrat] font-[700]">Address</h3>
+                    <p>123 Fifth Avenue, NY 10160, New York, USA</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h3 class="text-xl font-[Montserrat] font-[700]">Email Us</h3>
+                    <p>contact@example.com​</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h3 class="text-xl font-[Montserrat] font-[700]">Call Us </h3>
+                    <p>800-123-456</p>
+                </div>
+                <div class="flex flex-col gap-1">
+                    <h3 class="text-xl font-[Montserrat] font-[700]">Follow Us</h3>
+                    <span class="flex space-x-5">
+                        <svg class="fill-[#fb2056] bg-[#f4efef] w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>                                
+                        <svg class="fill-[#fb2056] bg-[#f4efef] w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>                
+                        <svg class="fill-[#fb2056] bg-[#f4efef] w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                    </span> 
+                </div>      
             </article>
-        </div>
-        
-
+        </div>   
     </main>
+    <footer class=" flex flex-col flex-center items-center py-8 gap-8 bg-black text-white">
+        <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2024 Outdoor Adventure</p>
+    </footer>    
 </body>
 </html>

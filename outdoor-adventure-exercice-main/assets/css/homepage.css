@@ -43,25 +43,28 @@ header {
    background-position:center; 
    background-size: cover;
    background-attachment: fixed;
+   background-blend-mode: color;
+   background-color: rgb(27, 23, 23);
+   opacity:0.9;
    color: white;
-   z-index: -2;
+   /* z-index: -2; */
   }
 
-.filter {
+/* sinon possibilité div au-dessus, avec header z-index: 1 :*/
+/* .filter {
    width: 100%;
    height: 100%;
    position: absolute;
    top: 0;
    left:0;
-   background-color: black;
-   opacity: 0.5; 
+   background-color: rgb(46, 44, 44);
+   opacity: 0.6; 
    z-index: -1;  
-}
+} */
 
-/* sinon possibilité dans header :*/
+
 /* header {
-   background-blend-mode: color;
-   background-color: rgb(181, 173, 173);
+   
 } */
 
 .header-container {
