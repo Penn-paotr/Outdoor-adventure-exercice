@@ -16,6 +16,7 @@ a {
 h1 {
    font-size: 4rem;
    font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
 }
 
 h2 {
@@ -37,15 +38,14 @@ p {
 /* HEADER with background image */
 header {
    width:100%;
-   height: 100%;
+   height: 100vh;
    position: relative; 
    background-image: url('../images/homepage/hero-bg-1.jpg');
    background-position:center; 
    background-size: cover;
    background-attachment: fixed;
    background-blend-mode: color;
-   background-color: rgb(27, 23, 23);
-   opacity:0.9;
+   background-color: rgba(0, 0, 0, 0.534);   
    color: white;
    /* z-index: -2; */
   }
@@ -67,15 +67,16 @@ header {
    
 } */
 
-.header-container {
+.header-container {   
    display: flex;
-   justify-content: center;
+   justify-content: space between;
+   padding: 0 9rem 0 9rem;
 }
 
 
 /* NAVBAR avec logo, menu et bouton "take action"*/
 nav { 
-   height: 35%;
+   height: 10vh;
    width: 100%;
    padding: 0 1rem 0 1rem; 
    display: flex;
@@ -83,10 +84,11 @@ nav {
    align-items: center;
 }
 
-header nav img {
-   width: 12.5%;
+.white-logo {
+   width: 10rem;
 }
 .black-logo {
+   width: 6rem;
    display: none;
 }
 .right-block {
@@ -95,12 +97,11 @@ header nav img {
    align-items: center;
 }
 
-ul {
+.right-block ul {
    display: flex;
    justify-content: center;
    align-items: center;
    margin-right: 1rem;
-
 }
 
 nav ul li {
@@ -133,27 +134,44 @@ nav ul li a {
    border-radius: 3rem;
    color: white;
 }
+.red-btn:hover {
+   background: rgba(215, 6, 76);
+}
 
-.both-btns .burger-btn {
+.burger-btn {
    height: 2.8rem;
    width: 2.8rem;
    position: absolute;
    right: 0;
+   margin-left: auto;
+   margin-right: auto;
    background-color: rgb(238, 8, 84);
    border-radius: .2rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;    
    display:none;
 }
 
-.burger-btn div {
-   height: 0.2rem;
-   width: 2.4rem;
-   border-top: solid 0.1rem white;
-   border-bottom: solid 0.1rem white;
-   background-color: rgb(238, 8, 84);
+.burger-btn:hover {
+   background: rgb(215, 6, 76);
+}
+
+.bar1, .bar2, .bar3 {
+   height: 0.1rem;
+   width: 1rem;    
+   margin: .2rem auto;
+   background-color: white;   
+   justify-self: center;
+   transition: .1s;
+}
+
+.mobile-menu {   
+   
+   display: none;
+}
+
+.active {
+   color:rgba(215, 6, 76);
+
+
 }
 
 /* MAIN-SECTION du header avec H1 notamment */
@@ -169,11 +187,6 @@ nav ul li a {
 .suggestion {
    font-size: 1.5rem;
    font-weight: bold;   
-}
-
-h1 {
-   font-family: "Roboto", sans-serif;
-   font-weight: 600;  
 }
 
 /* eventsSection */
@@ -199,11 +212,15 @@ h1 {
    left: 3rem;
 }
 
-.quote-text {
+.quote {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+.quote-text {   
+   font-size: 1.2rem;
 }
 
 .evenement-section {
@@ -223,7 +240,7 @@ h1 {
    max-width: 76%;
    margin: 2rem auto 2rem auto;
    border-radius: .3rem;
-   box-shadow:.9rem .9rem 0 .1rem rgb(224, 223, 223);
+   box-shadow:.9rem .9rem 0 .1rem rgb(209, 215, 209);
    filter: sepia(0.1);
 }
 
@@ -262,40 +279,53 @@ h1 {
    width:100%;
    height: 100%;
    position: relative; 
-   background-image: url('../images/homepage/section-bg-img.jpg'); 
-   
+   background-image: url('../images/homepage/section-bg-img.jpg');      
    background-repeat: no-repeat; 
    background-size: cover;
    background-attachment: fixed;
+   background-blend-mode: color;
+   background-color: rgba(0, 0, 0, 0.534); 
    color: white;
-   z-index: -2;
   }
 
-/*    .filter { voir HEADER }    */
 
 .section-bg-fix {
    width: 50%;
+   height: 100%;
    position: absolute;
    right: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 
 }
 
 /* destinationSection */
 
 .triple-container {
-   margin: 7rem 2.5rem 7rem 2.5rem;
+   margin: 5rem 10rem 5rem 10rem;
    display: grid;
    grid-template-columns: repeat(3, 1fr);   
-   gap: 1rem;
+   gap: 1.2rem;
    text-align: justify;
 }
 
-.column img {
-   max-width: 100%;
+.col {
+   display: flex;
+   flex-direction: column;   
+}
+
+.col-text{
+   margin-right: 2rem;
+}
+
+.col img {
+   width:90%;
+   height:90%;
    border-radius:.3rem;
 }
 
-.column:last-child {
+.last-img {
    margin-top: .5rem;
 }
 
@@ -325,9 +355,9 @@ footer p {
    align-items: center;
    z-index: 2;
    line-height: 1rem;
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(243, 246, 243);
    border-radius: 0.1rem;
-   border: solid .1rem rgb(229, 231, 235) ;  
+   border: solid .1rem rgb(243, 246, 243) ;  
    height: 3rem;
    width: 8rem;
    position: fixed;
@@ -376,8 +406,8 @@ footer p {
    position: fixed;
    right: -20rem;
    width: 20rem;
-   background-color: rgb(255, 255, 255);
-   border: solid .1rem rgb(224, 223, 223);
+   background-color: rgb(243, 246, 243);
+   border: solid .1rem rgb(243, 246, 243);
    border-radius: 0.1rem;
    font-family: "DM Sans", sans-serif;
    line-height: 1.7rem;   
