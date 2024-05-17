@@ -29,30 +29,31 @@ document.querySelector('.burger-btn').addEventListener('click', function() {
     burgerBtn.classList.toggle("transform");
 });
 
-/***  TO TOGGLE the menu  ***/
+// /***  TO TOGGLE the menu  ***/
 
-function toggleMenu() {
-    var menu = document.getElementsByClassName("mobile-menu");
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "block";
-    }
-  }
-document.querySelector('.burger-btn').addEventListener('click', toggleMenu);
+// function toggleMenu() {
+//     var menu = document.getElementsByClassName("burger-menu");
+//     if (menu.style.display === "block") {
+//         menu.style.display = "none";
+//     } else {
+//         menu.style.display = "block";
+//     }
+//   }
+// document.querySelector('.burger-btn').addEventListener('click', toggleMenu);
 
 /*** DROPDOWN menu ***/
 
-function toggleMenu() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function dropDownMenu() {
+    document.getElementById("burgerMenu").classList.toggle("show");
   }
 // quand l'utilisateur clique sur le bouton burger, le menu s'affiche
-document.querySelector('burger-btn').addEventListener('click', toggleMenu());
+document.querySelector('burger-btn').addEventListener('click', dropDownMenu());
 
 
 // quand l'utilisateur clique en dehors des onglts du menu, le menu disparaît
-// window.onclick = function(event) {
-document.addEventListener('click', function(event) { 
+
+// document.addEventListener('click', function(event) { 
+window.onclick = function(event) {
     if (!event.target.matches('.burger-btn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
@@ -63,7 +64,7 @@ document.addEventListener('click', function(event) {
                 }
             }
     }
-});
+};
 
 
 
