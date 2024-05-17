@@ -118,12 +118,6 @@ nav ul li a {
    color: white;
 }
 
-.both-btns {
-   height: 3.2rem;
-   width: 12.2rem;
-   position: relative;
-}
-
 .red-btn {
    text-transform: uppercase;
    font-weight: bold;
@@ -138,16 +132,23 @@ nav ul li a {
    background: rgba(215, 6, 76);
 }
 
+.burger-menu {
+   padding-top:0;
+   position: relative;
+   display:none;   
+}
+
 .burger-btn {
    height: 2.8rem;
    width: 2.8rem;
    position: absolute;
    right: 0;
+   top: 0;
    margin-left: auto;
    margin-right: auto;
    background-color: rgb(238, 8, 84);
-   border-radius: .2rem;
-   display:none;
+   border-radius: .2rem;  
+   align-items: center;
 }
 
 .burger-btn:hover {
@@ -163,15 +164,32 @@ nav ul li a {
    transition: .1s;
 }
 
-.mobile-menu {   
-   
+.dropdown-content {      
    display: none;
+   position: absolute;
+   width: 100%;
+   border-top: solid 0.1rem rgba(0,0,0,0.2);
+   border-bottom:  solid 0.1rem rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.dropdown-content a {
+   color: black;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+   background-color: #ddd;
+}
+
+.show {
+   display:block;
 }
 
 .active {
    color:rgba(215, 6, 76);
-
-
 }
 
 /* MAIN-SECTION du header avec H1 notamment */

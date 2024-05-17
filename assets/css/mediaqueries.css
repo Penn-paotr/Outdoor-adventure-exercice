@@ -3,7 +3,7 @@
 
 } */
 
-/* @media (max-width:991px) {
+/* @media (max-width:479px) {
     
     
     h1 {
@@ -40,26 +40,25 @@
     .white-logo {
         display: none;
     }
-    .right-block ul {
+    .right-block ul, .right-block .red-btn {
         display: none;
     }
-     .both-btns .red-btn {
-        display: none;
-    }
-    .both-btns .burger-btn {
+    .burger-menu {
+        display: inline-block;
+    } 
+    .burger-btn {
         display: block;
-        align-items: center;
-    }    
+    }
+
     .transform .bar1 {
         transform: translate(0, 0.275rem) rotate(-45deg);
-     }
-     .transform .bar2 {opacity: 0;}
-
-     .transform .bar3 {
+    }
+    .transform .bar2 {
+        opacity: 0;
+    }
+    .transform .bar3 {
        transform: translate(0, -0.275rem) rotate(45deg);
      }
- 
-
 }
 
 /* @media (max-width:575px) {
