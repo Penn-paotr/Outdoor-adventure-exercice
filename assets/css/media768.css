@@ -11,38 +11,40 @@
     }
     p {
         font-size: .9rem;
-    }
-    
+    }    
     .separator {
         width: 4.5rem;
         border-bottom: solid 0.1rem; 
     }
     header {
-        /* height: 70vh; */
-        background-position:center; 
-        background-repeat: no-repeat;
-        background-size: 190%;
+        /* background-attachment: scroll;
+        background-position: bottom; */
+        background-image : none;
     }
-    .header-container {
-        background-color: white;
-        color: black;
+    .header-container {  
         padding: 0;
+        background-color: white;
+        color: black;        
     } 
-    
+    nav {
+        height: 12vh;
+    }    
     .black-logo {
         display: block;
-
+        width: 6rem;
     }
     .white-logo {
         display: none;
     }
     .right-block ul, .right-block .red-btn {
         display: none;
-    }
-    .burger-menu {
-        /* display: block; */
-        border: solid 0.2rem black;
     } 
+    .burger-btn {
+        display: block;
+    }
+    .bar1, .bar2, .bar3 {        
+        display: block;
+     }
     .transform .bar1 {
         transform: translate(0, 0.275rem) rotate(-45deg);
     }
@@ -52,6 +54,23 @@
     .transform .bar3 {
         transform: translate(0, -0.275rem) rotate(45deg);
     }    
+    .dropdown-content {
+        display: none;
+    }
+    .show {
+        display:flex;
+        flex-direction:column;
+     }
+    .main-section {
+        /* height: 100vh; */
+        background-image: url('../images/homepage/hero-bg-1.jpg');
+        background-repeat: no-repeat;
+        background-position:center; 
+        background-attachment: scroll;
+        background-blend-mode: color;
+        background-color: rgba(0, 0, 0, 0.534);  
+        background-size: cover; 
+    }  
     .quote-img {
         width: 22%;
         position: relative;
@@ -84,6 +103,7 @@
         height: 70vh;
         background-size: 200%;
         background-position: center;
+        background-attachment: scroll;
     }
     .section-bg-fix {
         width: 75%;
@@ -113,7 +133,3 @@
     }
 } 
 
-@media (max-width:1199px) {
-
-
-} 

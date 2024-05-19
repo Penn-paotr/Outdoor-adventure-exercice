@@ -1,0 +1,91 @@
+@media (max-width:920px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .separator {
+        width: 8rem;
+        border-bottom: solid 0.05rem; 
+    }
+    header {
+        background-image: none;
+    }
+    .header-container {        
+        background-color: white;
+        color: black;
+        padding: 0;
+    }
+    nav {
+        height: 12vh;
+    }
+    .black-logo {
+        display: block;
+    }
+    .white-logo {
+        display: none;
+    }
+    .right-block ul, .right-block .red-btn {
+        display: none;
+    } 
+    .burger-btn {
+        display: block;
+    }
+    .bar1, .bar2, .bar3 {        
+        display: block;
+     }
+    .transform .bar1 {
+        transform: translate(0, 0.275rem) rotate(-45deg);
+    }
+    .transform .bar2 {
+        opacity: 0;
+    }
+    .transform .bar3 {
+        transform: translate(0, -0.275rem) rotate(45deg);
+    }    
+    .dropdown-content {
+        display: none;
+    }
+    .show {
+        display:flex;
+        flex-direction:column;
+    } 
+    .main-section {
+        /* height: 100vh; */
+        background-image: url('../images/homepage/hero-bg-1.jpg');
+        background-repeat: no-repeat;
+        background-position:center; 
+        background-attachment: scroll;
+        background-blend-mode: color;
+        background-color: rgba(0, 0, 0, 0.534);  
+        background-size: cover; 
+    }   
+    .quote-img {
+        width: 12%;
+        position: relative;
+        left: auto;
+        right: auto;
+    }
+    .banner {
+        flex-direction: column;
+        gap: 1.8rem;
+        margin-bottom: 4.5rem;                
+    }   
+    .quote-text {   
+        text-align: center;
+        line-height: 1.8rem;
+    }
+    .left-container, .right-container {
+        height: 55rem;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space between;
+    }
+    .double-container img {
+        max-width: 80%;
+    }     */
+} 
