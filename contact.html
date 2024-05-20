@@ -11,30 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/customize_popup.css">
 </head>
 <body> 
-    <header class="bg-[url('assets/images/contact/about-bg-2.jpg')] bg-center bg-blend-color bg-[#0000007a]  bg-fixed bg-cover h-screen p-6"> 
-        <nav class="flex justify-around items-center">
+    <header class="bg-[url('assets/images/contact/about-bg-2.jpg')] bg-center bg-blend-color bg-[#0000007a]  bg-scroll bg-cover h-screen p-6"> 
+        <nav class="flex justify-between items-center">
             <a href=""><img class="w-36" src="assets\images\homepage\white-logo@2x.png" alt="logo"></a>
             <ul class="font-semibold text-white  text-l flex gap-9 ">
                 <!-- <li><a class="font-[Noto\+Sans]" href="">Home</a></li> -->
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Link action</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a class="py-3 px-7 rounded-full font-semibold text-white bg-[#fb2056] hover:bg-[#9e3939]" href="">TAKE ACTION</a></li>
                 <!-- <li><a class="btn btn-error rounded-full text-white" href="">TAKE ACTION</a></li> -->
             </ul>
             
         </nav>
-        <h1 class="my-60 font-bold text-center text-6xl text-white font-[Roboto]">Contact Us</h1>
+        <h1 class="my-60 font-bold text-center text-[4rem] text-white font-[Roboto]">Contact Us</h1>
     </header>
-    <main class="h-screen flex bg-[#f4efef] text-black p-32 gap-10">
+    <main class="h-full flex bg-[#f4efef] text-black p-20 gap-10">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0"> 
             <h2 class="text-4xl font-[Montserrat] font-[700] mb-8">We're Ready, Let's Talk.</h2>
-            <form class="flex flex-col pt-6 pb-8 mb-4" action="" method="">            
+            <form class="flex flex-col pt-4 pb-8 mb-4" action="" method="">            
                 <input type="text" name="name" id="name" placeholder="Your Name" required class="appearance-none bg-white mb-6  border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
                 <input type="text" name="email" id="email" placeholder="Email Address" required class="appearance-none  bg-white mb-6 border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"/>
                 <textarea name="message" id="message" placeholder="Message" class="appearance-none bg-white mb-6 border rounded h-36 w-full py-2 px-3 text-gray-700 leading-tight"></textarea>
@@ -70,6 +70,8 @@
     <footer class=" flex flex-col flex-center items-center py-8 gap-8 bg-black text-white">
         <p>123 Fifth Avenue, NY 10160, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
         <p>Copyright © 2024 Outdoor Adventure</p>
-    </footer>    
+    </footer> 
+    <script src="assets/js/anim.js"></script>
+    <script src="assets/js/customizePopup.js"></script>   
 </body>
 </html>

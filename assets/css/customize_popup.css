@@ -1,0 +1,222 @@
+/* CUSTOMIZE : button and modal window (pop-up)
+/* FIXED customizing button*/
+.customize-btn {
+    display: flex; 
+    align-items: center;
+    z-index: 2;
+    line-height: 1rem;
+    background-color:white;
+    border-radius: 0.1rem;
+    border: solid .1rem rgb(243, 246, 243) ;  
+    height: 3rem;
+    width: 8.5rem;
+    position: fixed;
+    top: 8rem;
+    right:-10rem;   /* initialement décalé au-delà du bord droit */
+    visibility: hidden;    /* initialement caché */
+    transition: right 2s;  /* appliquée lors de la translation vers la gauche, voir translation.js */
+    
+ }
+ .customize-btn span {
+    box-sizing: border-box;
+    position: absolute;
+    right: 1.1rem;
+    font-family: dm sans;
+ }
+ .customize-btn img {
+    height: 1rem;
+    color:blue;
+ }
+ .blue-palette {
+    position: absolute;
+    left:1.1rem;
+ }
+ .white-palette {
+    position: absolute;
+    left:1.1rem;
+    visibility: hidden;
+ }
+ 
+ .customize-btn:hover {
+    background-color: blue;
+    border-color: blue;
+ }
+ .customize-btn:hover .blue-palette {
+    visibility:hidden;
+ }
+ .customize-btn:hover .white-palette {
+    visibility:visible;
+ }
+ .customize-btn:hover span {
+    color: white;
+ }
+ 
+ /* custommizing POPUP */
+ .customize-popup {
+    position: fixed;
+    right: -20rem;
+    width: 20.5rem;
+    background-color: rgb(243, 246, 243);
+    border: solid .1rem rgb(243, 246, 243);
+    border-radius: 0.1rem;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.7rem;   
+    visibility: hidden;
+    transition: 2s;
+    z-index: 3;
+ }
+ 
+ .customize-popup:target {
+    visibility: visible;
+    transition: right 2s;
+    right: 0;
+ }
+ 
+ .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:0 .1rem .3rem 0rem rgb(224, 223, 223);
+    border-top: solid 0.1rem rgb(229, 231, 235);   
+    padding-left: 2rem;
+    padding-right: 2rem;
+ }
+ 
+ .customize-popup h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    
+ }
+ 
+ .close {
+    font-size: 1.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.05 rem;
+    border-radius: 0.05rem;
+    opacity:.5;
+ }
+ 
+ .close:hover {
+    opacity: 1;
+ }
+ 
+ .popup-container {
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+ }
+ .popup-container p {
+    font-size: .9rem;
+    font-weight: 300;
+    border-bottom: solid 0.1rem rgb(229, 231, 235);
+ }
+ 
+ .other-colors, .other-fonts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+ }
+ 
+ .colors-title, .fonts-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+ }
+ 
+ 
+ .popup-container  h4 {   
+    font-size: 1rem;
+    font-weight: 500;
+ }
+ 
+ .default {
+    font-size: .75rem;
+    font-weight: 400;
+    opacity: .4;
+ }
+ 
+ .default:hover {
+    cursor: not-allowed;
+ }
+ /* 
+ .other-colors {
+    padding-left: 2rem;
+    padding-right: 2rem;
+ }
+ 
+ .other-fonts {
+    padding-left: 2rem;
+    padding-right: 2rem;
+ } */
+ 
+ .colors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);   
+    grid-auto-rows: 2rem;
+    gap: 1rem;
+ }
+ 
+ .color-item {
+    border: solid 0.5rem rgb(229, 231, 235) ; 
+    border-radius: 5%;
+ }
+ 
+ .c1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+ } 
+ .c1 span {
+    text-transform: uppercase;
+    font-size: .8rem;
+ }
+ 
+ .default-set {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .ball {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+ }
+ 
+ .default-colors-set:nth-child(1) {
+    background-color: rgb(251, 32, 86);
+ }
+ .default-colors-set:nth-child(2) {
+    background-color: rgb(218, 28, 75);
+ }
+ .default-colors-set:nth-child(3) {
+    background-color: rgb(25, 25, 25);
+ }
+ .default-colors-set:nth-child(4) {
+    background-color: rgb(64, 64, 64);
+ }
+ .default-colors-set:nth-child(5) {
+    background-color: rgb(245, 245, 245);
+ }
+ 
+  
+  
+ 
+ 
+ .fonts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);   
+    gap: 1rem;
+ }
+ 
+ 

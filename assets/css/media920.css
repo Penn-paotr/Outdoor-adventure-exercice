@@ -9,8 +9,8 @@
         font-size: 1rem;
     }
     .separator {
-        width: 8rem;
-        border-bottom: solid 0.05rem; 
+        width: 5rem;
+        border-bottom: solid 0.1rem; 
     }
     header {
         background-image: none;
@@ -54,9 +54,11 @@
         display:flex;
         flex-direction:column;
     } 
-    .main-section {
-        /* height: 100vh; */
+    .home-main {
         background-image: url('../images/homepage/hero-bg-1.jpg');
+    }
+    .home-main, .about-main, .services-main, .projects-main {
+        /*height: 100vh; */        
         background-repeat: no-repeat;
         background-position:center; 
         background-attachment: scroll;
@@ -65,27 +67,40 @@
         background-size: cover; 
     }   
     .quote-img {
-        width: 12%;
+        width: 10%;
         position: relative;
         left: auto;
         right: auto;
     }
     .banner {
         flex-direction: column;
-        gap: 1.8rem;
-        margin-bottom: 4.5rem;                
+        gap: 1rem;
+        margin-bottom: 2.5rem; 
+        margin-top: 2.5rem;                  
     }   
     .quote-text {   
         text-align: center;
-        line-height: 1.8rem;
+        line-height: 1rem;
     }
+    
     .left-container, .right-container {
-        height: 55rem;
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: space between;
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
     }
     .double-container img {
         max-width: 80%;
-    }     */
-} 
+    }
+    .top-container p, .bottom-container p {
+        font-size: 0.9rem;
+    }
+    .bottomleft-container p {
+        margin-top: 1.5rem;
+     }
+    #explorationSection {
+        background-attachment: scroll; 
+    }     
+    .triple-container {
+        margin: 5rem 1rem 5rem 1rem;
+    }  
+}  
