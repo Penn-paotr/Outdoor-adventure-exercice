@@ -135,6 +135,22 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    main .triple-container {
+        margin: 5rem 10rem 5rem 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     } 
+     main .triple-container .last, main .triple-container .second{
+        display: none;
+     }
+     /* main .triple-container img {
+        width: 100%;
+        padding: 0;
+     } */
+
     .col-text {
         margin: auto;
     }

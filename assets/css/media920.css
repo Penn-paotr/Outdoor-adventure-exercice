@@ -102,5 +102,18 @@
     }     
     .triple-container {
         margin: 5rem 1rem 5rem 1rem;
-    }  
+    } 
+    main .triple-container {
+        margin: 5rem 10rem 5rem 10rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   
+        gap: 1.2rem;
+        text-align: justify;
+     } 
+     main .triple-container .last {
+        display: none;
+     }
+     main .triple-container img {
+        width: 35vw;
+     }
 }  

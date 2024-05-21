@@ -382,7 +382,31 @@ nav .red-btn {
    margin-top: 2rem;
 }
 
+.presentation {
+   display: flex;
+   flex-direction: column;
+   margin-top: 2rem;
+   padding: 1.8rem;
+}
 
+.presentation span {
+   display: flex;
+   flex-direction: row;
+}
+
+.presentation .separator {
+   margin-bottom: 1.8rem;
+   margin-left: .7rem;
+}
+
+.presentation h3 {
+   font-size: 2rem;
+}
+
+main .triple-container img {
+   width: 100%;
+   border-radius: .3rem
+}
 
 .triple-container {
    margin: 5rem 10rem 5rem 10rem;
@@ -390,6 +414,10 @@ nav .red-btn {
    grid-template-columns: repeat(3, 1fr);   
    gap: 1.2rem;
    text-align: justify;
+}
+
+main .triple-container {
+   margin: 2rem auto auto auto;
 }
 
 .col {
